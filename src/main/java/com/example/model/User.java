@@ -1,17 +1,19 @@
-package com.example.firstapi.demo.model;
+package com.example.model;
 //import org.springframework.
 
 
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection  = "users")
 public class User {
+    @Id
     String id;
+
     String name;
     String email;
 
-    public User(String id, String name, String email) {
-        this.id = id;
+    public User(String name, String email) {
         this.name = name;
         this.email = email;
     }

@@ -1,9 +1,8 @@
-package com.example.firstapi.demo.service;
+package com.example.repository;
 
-import com.example.firstapi.demo.model.User;
+import com.example.model.User;
 import org.springframework.stereotype.Service;
 
-import java.util.Arrays;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Optional;
